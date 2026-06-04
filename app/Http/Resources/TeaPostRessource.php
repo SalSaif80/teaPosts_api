@@ -14,6 +14,7 @@ class TeaPostRessource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        // refactor it
         return [
             "id" => $this->id,
             "name" => $this->tea_name,
