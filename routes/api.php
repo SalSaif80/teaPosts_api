@@ -61,6 +61,7 @@ Route::get('/user/{id}', function (string $id) {
 Route::get('teaPosts',[TeaPostController::class,'index']);
 
 Route::get('teaPost/{id}',[TeaPostController::class,'show']);
+
 Route::post('teaPosts',[TeaPostController::class,'store']);
 Route::put("teaPost/{id}",[TeaPostController::class,'update']);
 Route::delete("teaPost/{id}",[TeaPostController::class,'delete']);
